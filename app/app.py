@@ -211,8 +211,10 @@ class Application(MainWindow):
     def scan_library(self):
         self.libraryPage.closeEmptyPrompt()
         current_directory = os.getcwd()
+        #For testing Music files on the project directory Music Folder!
         music_folder = os.path.join(current_directory, "Music")
         libraryScanner = LibraryScanner(self.audioPlayer, music_folder)
+        #For the Music files on the Music folder of the Current User Eg:C:\Users\Abhay\Music!
         # libraryScanner = LibraryScanner(self.audioPlayer, join(expanduser("~"), "Music"))
         libraryScanner.signal.scanned.connect(self.library_add_track)
         self.threadPool.start(libraryScanner)
