@@ -1,0 +1,8 @@
+0 play_pause
+1 forward
+2 backward
+3 up
+4 down
+5 no_action
+6 next
+7 previous
