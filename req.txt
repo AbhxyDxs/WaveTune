@@ -1,0 +1,11 @@
+python-vlc
+natsort
+PyQt5
+numpy
+cvzone
+opencv-python
+mediapipe
+numpy
+python-vlc
+pafy
+tensorflow
